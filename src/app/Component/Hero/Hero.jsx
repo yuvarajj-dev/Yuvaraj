@@ -9,7 +9,7 @@ import { Project } from '../Project/Project';
 import { Contact } from '../Contact/Contact';
 
 gsap.registerPlugin(ScrollTrigger);
-
+//
 const Hero = () => {
     useEffect(() => {
         const ctx = gsap.context(() => {
