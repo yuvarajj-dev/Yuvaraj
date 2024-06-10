@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Scroll from "./Component/Lenies Scroll/Scroll";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import "./Font/Font.css";
+import Scroll from "./Component/Lenies Scroll/Scroll";
+ 
 
 export const metadata = {
   title: "YUVARAJ",
@@ -12,10 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
-        
-      <Scroll/>
-         </body>
+      <body>{children}
+
+        <Scroll />
+       
+      </body>
     </html>
   );
 }

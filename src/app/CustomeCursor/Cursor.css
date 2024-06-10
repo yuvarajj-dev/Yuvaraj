@@ -1,0 +1,54 @@
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background:  #FF7F3E;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  .cursor::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  
+  .piu {
+    display: block;
+    font-size: 1rem;
+    opacity: 0;
+  }
+  
+  .piu.active {
+    display: block;
+    margin-top: 31.3%;
+  }
+  
+  .cursorFollower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(4px, 4px);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari */
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Optional: Add a subtle border */
+  }
+  

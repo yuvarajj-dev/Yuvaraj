@@ -21,10 +21,10 @@ const Hero = () => {
                 scrollTrigger: {
                     trigger: ".container",
                     pin: true,
-                    scrub: 1,
+                    scrub: true,
                     snap: 1 / (sections.length - 1),
                     end: () => "bottom+=1000% bottom",
-                    markers: true
+                    
                 }
             });
         });
@@ -34,7 +34,7 @@ const Hero = () => {
 
     return (
         <>
-            
+
             <div className="container ">
                 <Homepage />
                 <About />
